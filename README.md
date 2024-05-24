@@ -39,7 +39,7 @@
 
 + Function: Guides the LLM in processing user inputs, emotion predictions, and past interaction data to generate appropriate responses.
 
-# Emotional Response Generation
+## Emotional Response Generation
 
 + Process: The LLM evaluates the ranked emotions, considers the facial emotion detection, and incorporates past data to formulate a response with a concluding
   emotion.
