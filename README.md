@@ -2,12 +2,12 @@
 
 ## Overview
 
-# This project integrates advanced AI components to create a conversational agent capable of recognizing user emotions, personalizing responses, and generating #human-like audio replies. The core functionalities revolve around a large language model (LLM), emotion detection, face recognition, and sophisticated data #handling to ensure contextually aware interactions.
+**This project integrates advanced AI components to create a conversational agent capable of recognizing user emotions, personalizing responses, and generating human-like audio replies. The core functionalities revolve around a large language model (LLM), emotion detection, face recognition, and sophisticated data handling to ensure contextually aware interactions.**
 
 ## Components
 
 ## Large Language Model (LLM)
-+Model: Google Gemini-1.5-pro-latest
++ Model: Google Gemini-1.5-pro-latest
 
 + Function: Provides the core conversational capabilities of the agent, ensuring fluid and coherent dialogues.
   
