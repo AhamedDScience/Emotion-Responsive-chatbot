@@ -1,52 +1,56 @@
-#Project Title
+# Project Title
 
-##Overview
+## Overview
 
-#This project integrates advanced AI components to create a conversational agent capable of recognizing user emotions, personalizing responses, and generating #human-like audio replies. The core functionalities revolve around a large language model (LLM), emotion detection, face recognition, and sophisticated data #handling to ensure contextually aware interactions.
+# This project integrates advanced AI components to create a conversational agent capable of recognizing user emotions, personalizing responses, and generating #human-like audio replies. The core functionalities revolve around a large language model (LLM), emotion detection, face recognition, and sophisticated data #handling to ensure contextually aware interactions.
 
-##Components
+## Components
 
-##Large Language Model (LLM)
+## Large Language Model (LLM)
 +Model: Google Gemini-1.5-pro-latest
 
-+Function: Provides the core conversational capabilities of the agent, ensuring fluid and coherent dialogues.
-Framework
++ Function: Provides the core conversational capabilities of the agent, ensuring fluid and coherent dialogues.
+  
+## Framework
 
-+Langchain: Facilitates the seamless integration of different components, enabling a cohesive interaction flow between the LLM, emotion detection, and face recognition modules.
++ Langchain: Facilitates the seamless integration of different components, enabling a cohesive interaction flow between the LLM, emotion detection, and face recognition modules.
 
-##Emotion Detection
+## Emotion Detection
 
-+Model: Convolutional Neural Network (CNN)
++ Model: Convolutional Neural Network (CNN)
 
-+Function: Identifies user emotions through facial expressions, allowing the system to understand and respond appropriately to the user's emotional state.
-Face Recognition
++ Function: Identifies user emotions through facial expressions, allowing the system to understand and respond appropriately to the user's emotional state.
 
-+Library: Utilized to capture and encode user faces for personalization.
+## Face Recognition
 
-+Function: Enables the system to store and retrieve past user data based on face encodings, enhancing the personalization of responses.
++ Library: Utilized to capture and encode user faces for personalization.
 
-#Data Storage
++ Function: Enables the system to store and retrieve past user data based on face encodings, enhancing the personalization of responses.
 
-+Method: Past user data is stored based on face encodings.
+## Data Storage
 
-+Function: Allows the system to provide contextual responses by referring to previous interactions.
-Prompt Engineering
++ Method: Past user data is stored based on face encodings.
 
-+Framework: Langchain prompt templates
++ Function: Allows the system to provide contextual responses by referring to previous interactions.
 
-+Function: Guides the LLM in processing user inputs, emotion predictions, and past interaction data to generate appropriate responses.
+## Prompt Engineering
 
-#Emotional Response Generation
++ Framework: Langchain prompt templates
 
-+Process: The LLM evaluates the ranked emotions, considers the facial emotion detection, and incorporates past data to formulate a response with a concluding emotion.
++ Function: Guides the LLM in processing user inputs, emotion predictions, and past interaction data to generate appropriate responses.
 
-+Goal: To provide emotionally intelligent responses that resonate with the user's current emotional state.
+# Emotional Response Generation
 
-##Text-to-Speech (TTS)
++ Process: The LLM evaluates the ranked emotions, considers the facial emotion detection, and incorporates past data to formulate a response with a concluding
+  emotion.
 
-+Function: Generates audio responses that align with the concluding emotion, ensuring a natural and empathetic conversational experience.
++ Goal: To provide emotionally intelligent responses that resonate with the user's current emotional state.
+
+## Text-to-Speech (TTS)
+
++ Function: Generates audio responses that align with the concluding emotion, ensuring a natural and empathetic conversational experience.
 
 ## Unique Data Handling Approach
  
-+ConversationSummaryBufferMemory: Used to integrate the LLM into the chat history.
-+Purpose: Not used as a database but to maintain and manage the token limit, storing data coming from the ConversationSummaryBufferMemory.
++ ConversationSummaryBufferMemory: Used to integrate the LLM into the chat history.
++ Purpose: Not used as a database but to maintain and manage the token limit, storing data coming from the ConversationSummaryBufferMemory.
