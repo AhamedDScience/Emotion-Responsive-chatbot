@@ -124,7 +124,7 @@ def process_camera(video_file):
         prompt=prompt_template,
         memory=ConversationSummaryBufferMemory(
             llm=ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", temperature=0.6),
-            max_token_limit=30,
+            max_token_limit=80000,
             moving_summary_buffer=chat_history
         )
     )
