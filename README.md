@@ -1,29 +1,45 @@
-# Emotion-Responsive-LLM
-“This project aimed to develop an emotion-responsive chatbot capable of personalizing interactions based on a user's emotional state and past conversations.”
+**Project Title
+****Overview**
+This project integrates advanced AI components to create a conversational agent capable of recognizing user emotions, personalizing responses, and generating human-like audio replies. The core functionalities revolve around a large language model (LLM), emotion detection, face recognition, and sophisticated data handling to ensure contextually aware interactions.
 
-![chatbot](https://github.com/AhamedDScience/Emotion-Responsive-LLM/assets/167436292/cec3a5bd-52b4-4745-93f9-b51c544a13b5)
+**Components**
 
+Large Language Model (LLM)
+Model: Google Gemini-1.5-pro-latest
 
-Large Language Model (LLM):
-Google gemini-1.5-pro-latest provided the core conversational capabilities.
+Function: Provides the core conversational capabilities of the agent, ensuring fluid and coherent dialogues.
+Framework
 
-Framework:
-Langchain facilitated the integration of different components.
+Langchain: Facilitates the seamless integration of different components, enabling a cohesive interaction flow between the LLM, emotion detection, and face recognition modules.
 
-Emotion Detection:
-A Convolutional Neural Network (CNN) model identified emotions by user face.
+**Emotion Detection**
+Model: Convolutional Neural Network (CNN)
 
-Face Recognition:
-A face recognition library captured user encodings for personalization.  
+Function: Identifies user emotions through facial expressions, allowing the system to understand and respond appropriately to the user's emotional state.
+Face Recognition
 
-Data Storage:
-Past user data was stored based on face encodings, enabling contextual responses.
+Library: Utilized to capture and encode user faces for personalization.
 
-Prompt Engineering:
-Langchain prompt templates guided the LLM to process user input, emotion predictions, and past data.
+Function: Enables the system to store and retrieve past user data based on face encodings, enhancing the personalization of responses.
 
-Emotional Response Generation:
-The LLM ranked emotions, considered face-based emotion, and past data to formulate an appropriate response with a concluding emotion.
+**Data Storage
+**
+Method: Past user data is stored based on face encodings.
 
-Text-to-Speech (TTS):
-A function generated audio responses tailored to the concluding emotion.
+Function: Allows the system to provide contextual responses by referring to previous interactions.
+Prompt Engineering
+
+Framework: Langchain prompt templates
+
+Function: Guides the LLM in processing user inputs, emotion predictions, and past interaction data to generate appropriate responses.
+
+**Emotional Response Generation
+**
+Process: The LLM evaluates the ranked emotions, considers the facial emotion detection, and incorporates past data to formulate a response with a concluding emotion.
+
+Goal: To provide emotionally intelligent responses that resonate with the user's current emotional state.
+Text-to-Speech (TTS)
+Function: Generates audio responses that align with the concluding emotion, ensuring a natural and empathetic conversational experience.
+Unique Data Handling Approach
+ConversationSummaryBufferMemory: Used to integrate the LLM into the chat history.
+Purpose: Not used as a database but to maintain and manage the token limit, storing data coming from the ConversationSummaryBufferMemory.
