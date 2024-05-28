@@ -63,6 +63,7 @@ def separate_audio(video_file, audio_path):
 # Function to process camera data
 def process_camera(video_file):
     emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutral", 5: "Sad", 6: "Surprised"}
+    face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
     audio_path = "output_audio.wav"
 
     text = separate_audio(video_file, audio_path)
@@ -86,7 +87,6 @@ def process_camera(video_file):
                 matches.extend(face_recognition.compare_faces(face_encoding, face_encodings))
             
             gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
             faces = face_detector.detectMultiScale(gray_frame, scaleFactor=1.3, minNeighbors=5)
             for (x, y, w, h) in faces:
                 roi_gray = gray_frame[y:y + h, x:x + w]
