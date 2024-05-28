@@ -28,11 +28,13 @@ llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", temperature=0.6)
 
 prompt_template = PromptTemplate(
     input_variables=['history', 'input'],
-    template='''You are a nice friend and imagine you have the ability to remember the past conversation and the ability to see the face of the conversation's human. Use the past conversation if it's needed. Based on the conversation chat emotion and the human face emotion, alter the responses but note you have to answer their question first if they ask before concerning about his emotion and rank the human chat response within these emotions: sad, fearful, angry, love, embarrassed, happy, neutral.
+    template='''You are a nice friend and imagine you have the ability to remember the past conversation and the ability to see the face of the conversation's human. Use the past conversation if it's needed.
+                Based on the conversation chat emotion and the human face emotion, alter the responses but note you have to answer their question first if they ask 
+                before concerning about his emotion and rank the human chat response within these emotions: sad, fearful, angry, love, embarrassed, happy, neutral.
 
 Use the following format:
 
-Response: response here in a beautiful manner
+Response: respond in a lovely way right here.
 Rank the emotion of the human chat input: the ranked value here
 .\n\nCurrent conversation:\n{history}\nHuman: {input}\nAI:'''
 )
