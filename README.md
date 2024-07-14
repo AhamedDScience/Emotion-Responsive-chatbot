@@ -1,6 +1,6 @@
 # Emotion-Responsive ChatBot
 
-![Uploading Screenshot 2024-07-14 150628.png…]()
+[![Screenshot-2024-07-14-150628.png](https://i.postimg.cc/fTzKZb6j/Screenshot-2024-07-14-150628.png)](https://postimg.cc/rzHWNqyK)
 
 ## Overview
 
