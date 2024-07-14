@@ -1,7 +1,6 @@
 # Emotion-Responsive ChatBot
 
-[[![Screenshot-2024-05-24-175633]([https://github.com/AhamedDScience/Emotion-Responsive-LLM/assets/167436292/c71206da-fec5-44ee-9289-2b021c2a2da9](https://postimg.cc/rzHWNqyK))]
-
+![Uploading Screenshot 2024-07-14 150628.png…]()
 
 ## Overview
 
