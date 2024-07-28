@@ -2,6 +2,9 @@
 
 [![Screenshot-2024-07-14-150628.png](https://i.postimg.cc/fTzKZb6j/Screenshot-2024-07-14-150628.png)](https://postimg.cc/rzHWNqyK)
 
+# "This project is just an idea-level demo of combining multiple models and elevating the LLM's capabilities."
+
+
 ## Overview
 
 **This project integrates advanced AI components to create a conversational agent capable of recognizing user emotions, personalizing responses, and generating human-like audio replies. The core functionalities revolve around a large language model (LLM), emotion detection, face recognition, and sophisticated data handling to ensure contextually aware interactions.**
